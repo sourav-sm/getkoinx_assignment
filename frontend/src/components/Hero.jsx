@@ -4,7 +4,7 @@ import Heroright2 from './Heroright2';
 
 const Hero = ()=>{
   return (
-    <div className="grid grid-cols-10 p-5">
+    <div className="grid grid-cols-10 p-5 gap-5">
            <div className="col-span-7"> 
               <Heroleft/> {/* Apply col-span-7 directly to Heroleft */}
            </div>  
