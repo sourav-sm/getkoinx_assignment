@@ -21,7 +21,10 @@ function App() {
           Bitcoin
         </div>
         <Hero/>
+        <AboutBitcoin/>
+        <Tokenomics/>
         <Sentiment/>
+        <Team/>
         <YourComponent/>
         
       </div>  
