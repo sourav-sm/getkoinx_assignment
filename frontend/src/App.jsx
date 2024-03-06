@@ -1,7 +1,12 @@
+import Team from './Pages/Team';
 import YourComponent from './components/Alsolike';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Body from './components/body';
+import Tokenomics from './Pages/Tokenomics';
+import AboutBitcoin from './Pages/AboutBitcoin';
 import './index.css';
+import Sentiment from './Pages/Sentiment';
 
 function App() {
  
@@ -16,7 +21,9 @@ function App() {
           Bitcoin
         </div>
         <Hero/>
+        <Sentiment/>
         <YourComponent/>
+        
       </div>  
   )
 }
