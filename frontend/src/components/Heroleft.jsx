@@ -1,6 +1,7 @@
 import HeroLeft from "../Images/heroLeft.png"
 import hero_logo from "../Images/hero_logo.png"
 import { useState,useEffect } from "react";
+import TradingViewWidget from "./TradingViewWidget";
 
 const Heroleft=()=>{
     const[bitcoinPrice,SetBitcoinPrice] = useState({
@@ -41,12 +42,15 @@ const Heroleft=()=>{
              <img className="h-20" src={hero_logo} alt="" />
              <div>
                 <p className="font-bold text-4xl flex gap-3"> ${bitcoinPrice.usd.toLocaleString()} 
-                  <p className="text-base font-medium">( {bitcoinPrice.usdChange.toFixed(2)}%)</p>
+                  {/* <p className="text-base font-medium">( {bitcoinPrice.usdChange.toFixed(2)}%)</p> */}
                   <p className="text-base font-normal">(24H)</p>
                 </p>
                 <p className="font-bold text-2xl"> ₹{bitcoinPrice.inr.toLocaleString()}</p>
              </div>
-             <img src={HeroLeft} alt="" />
+             {/* <img src={HeroLeft} alt="" /> */}
+             <div style={{ height: "600px", width: "100%" }}> {/* Ensure the container has a defined height */}
+            <TradingViewWidget />
+    </div>
         </div>
        )
 }

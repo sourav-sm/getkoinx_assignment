@@ -1,3 +1,4 @@
+import YourComponent from './components/Alsolike';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import './index.css';
@@ -15,6 +16,7 @@ function App() {
           Bitcoin
         </div>
         <Hero/>
+        <YourComponent/>
       </div>  
   )
 }

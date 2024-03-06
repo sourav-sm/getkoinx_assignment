@@ -8,8 +8,8 @@ const Hero = ()=>{
            <div className="col-span-7"> 
               <Heroleft/> {/* Apply col-span-7 directly to Heroleft */}
            </div>  
-           <div className="col-span-3">
-             <Heroright1/>
+           <div className="grid col-span-3 gap-5">
+             <Heroright1 />
              <Heroright2/>
            </div>
         </div>
