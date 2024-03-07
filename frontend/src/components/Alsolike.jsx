@@ -73,7 +73,7 @@
 // export default YourComponent;
 import React, { useEffect, useState } from 'react';
 
-const YourComponent = () => {
+const AlsoLike = () => {
   const [trendingCoins, setTrendingCoins] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -145,4 +145,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default AlsoLike;
