@@ -30,7 +30,7 @@ const Sentiment = () => {
         <h2 className="font-semibold mt-5 text-lg md:text-xl mb-3 text-slate-400">Analyst Estimates</h2>
         <div className="flex gap-10 justify-center md:justify-start sm:flex">
           <div className="text-green-500 bg-slate-300 text-2xl md:text-3xl font-bold rounded-full p-6 md:p-10 sm:text-3xl">76%</div>
-          <img src={sentimentPercentage} alt="" className="w-full md:w-auto" style={{ maxWidth: '300px' }} />
+          <img src={sentimentPercentage} alt="" className="w-full sm:w-auto" style={{ maxWidth: '250px' }} />
         </div>
       </div>
     </div>

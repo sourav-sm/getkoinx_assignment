@@ -27,6 +27,9 @@ const Heroright2=()=>{
               {trendingcoins.map((coin, index) => (
                <li className="flex gap-3 mb-3" key={index}>
                <img className="h-7" src={coin.item.small} alt="" />{coin.item.name} ({coin.item.symbol}) 
+               <p className={coin.item.data.price_change_percentage_24h.usd >= 0 ? 'text-green-500 ml-11' : 'text-red-500 ml-11' }>
+                 {coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%
+               </p>
                </li>
                 ))}
             </ul>
